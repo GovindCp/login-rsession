@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "8cd45fc6-31e5-45e0-9c88-deb660430258",
+		"name": "User Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Profile Update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Access-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc0FjdGl2ZSI6dHJ1ZSwiX2lkIjoiNWIxNGZlY2UyNTg2MDUzMmY0Y2E3YTEwIiwibmFtZSI6IkdvdmluZCBBZ3Jhd2FsIiwiYWdlIjoyMywiYWRkcmVzcyI6IjYyNCwgS29ybWFuZ2xhIDh0aCBCbGNvayIsImVtYWlsIjoiYWdyYXdhbC5nb3ZpbmQyM0BnbWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDE4LTA2LTA0VDA4OjU2OjQ3LjM4MVoiLCJ1cGRhdGVkQXQiOiIyMDE4LTA2LTA0VDA5OjQxOjU0LjU5M1oiLCJsYXN0bG9naW4iOiIyMDE4LTA2LTA0VDA5OjQxOjU0LjU5MFoiLCJpYXQiOjE1MjgxMDUzMTQsImV4cCI6MTUyODE5MTcxNH0.szSm4Thhc6rsQEUjfNQDQKKFDeKBm5EYA5ua2zJms0c"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Amit Jain\",\n\t\"age\": 24,\n\t\"address\": \"Indore MP\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8420/api/v1/profile/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8420",
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Govind Agrawal\",\n\t\"age\": \"23\",\n\t\"address\":\"624, Kormangla 8th Blcok\",\n\t\"email\":\"agrawal.govind23@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8420/api/prelogin/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8420",
+					"path": [
+						"api",
+						"prelogin",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"agrawal.govind23@gmail.com\",\n\t\"password\":\"EB4CHBN3\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8420/api/prelogin/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8420",
+					"path": [
+						"api",
+						"prelogin",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"agrawal.govind23@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8420/api/prelogin/v1/forgotPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8420",
+					"path": [
+						"api",
+						"prelogin",
+						"v1",
+						"forgotPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Otp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"agrawal.govind23@gmail.com\",\n\t\"otp\":\"sdfsdf\",\n\t\"password\":\"12345\",\n\t\"confirmPassword\":\"12345\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8420/api/prelogin/v1/verifyOtp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8420",
+					"path": [
+						"api",
+						"prelogin",
+						"v1",
+						"verifyOtp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
